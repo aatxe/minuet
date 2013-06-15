@@ -10,4 +10,4 @@ I decided to set up minuet in a way that makes it as natural as humanly possible
 * [Jera Design](http://www.jera.com/) for the original [minunit.h](http://www.jera.com/techinfo/jtns/jtn002.html).
 
 ## Licensing ##
-pkgnx is licensed under the MIT License. The full license text can be found in LICENSE.md for your convenience.
+minuet is licensed under the MIT License. The full license text can be found in LICENSE.md for your convenience.
