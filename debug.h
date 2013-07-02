@@ -31,7 +31,7 @@
 #define check(A, M, ...) if(!(A)) { log_err(M, ##__VA_ARGS__); errno=0; goto error; }
 
 // check_user(A, M, ...): logs a message with fprintf(M, ...) and jumps to the label error if a condition is not met.
-#define check_user(A, M, ...) if(!(A)) { fprintf(M, ##__VA_ARGS__); errno=0; goto error; }
+#define check_user(A, M, ...) if(!(A)) { fprintf(stderr, M, ##__VA_ARGS__); errno=0; goto error; }
 
 // check_debug(A, M, ...): logs a message with debug(M, ...) and jumps to the label error if a condition is not met.
 #define check_debug(A, M, ...) if(!(A)) { debug(M, ##__VA_ARGS__); errno=0; goto error; }
