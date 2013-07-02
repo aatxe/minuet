@@ -39,7 +39,7 @@
 // sentinel(M, ...): logs a message with log_err and jumps to the label error
 #define sentinel(M, ...)  { log_err(M, ##__VA_ARGS__); errno=0; goto error; }
 
-// check_mem(A): uses check(A, "Out of memory.") to check if a pointer was properly allocated.
-#define check_mem(A) check((A), "Out of memory.")
+// check_mem(A): uses check(A, "Out of memory.\n") to check if a pointer was properly allocated.
+#define check_mem(A) check((A), "Out of memory.\n")
 
 #endif
