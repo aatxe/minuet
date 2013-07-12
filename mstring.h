@@ -6,7 +6,7 @@ typedef struct mstring {
 	char *str;
 } mstring;
 
-#define mlen(s) (s)->length
-#define cstr(s) (s)->str
+#define mlen(s) (s).length
+#define cstr(s) (s).str
 
 #endif
