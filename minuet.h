@@ -4,4 +4,6 @@
 #include "mstring.h"
 #include "debug.h"
 
+#define forever for(;;)
+
 #endif
